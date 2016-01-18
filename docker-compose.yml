@@ -1,6 +1,14 @@
+# Project: gmacario/torino-hacknight
+# File: docker-compose.yml
+#
 # See also:
 # - Compose file reference: https://docs.docker.com/compose/compose-file/
 
-mygolang:
-  image: golang:1.4.3
+mydevenv:
+  build: mydevenv/
   tty: true
+  command: "echo Hello world"
+
+# TODO: Create a Docker volume for arduino-builder sources
+
+# EOF
