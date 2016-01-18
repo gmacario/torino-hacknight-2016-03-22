@@ -1,0 +1,6 @@
+# See also:
+# - Compose file reference: https://docs.docker.com/compose/compose-file/
+
+mygolang:
+  image: golang:1.4.3
+  tty: true
