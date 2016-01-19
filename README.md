@@ -25,7 +25,7 @@ Notice that installing [Docker Toolbox](https://www.docker.com/docker-toolbox) o
 
 This project has been developed and tested using Docker Toolbox 1.9.1i running on a Dell laptop with 8 GB RAM and MS Windows 7 64-bit.
 
-License: MIT - See `LICENSE` file for details.
+License: MIT - See [LICENSE](LICENSE) file for details.
 
 Copyright 2016, [Gianpaolo Macario](https://gmacario.github.io/)
 
