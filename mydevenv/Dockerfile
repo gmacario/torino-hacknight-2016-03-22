@@ -11,8 +11,8 @@ RUN apt-get update && apt-get -y dist-upgrade && apt-get -y install dos2unix fil
 #RUN useradd --shell /bin/bash devel
 #USER devel
 
-# Setup arduino-builder
-RUN git clone https://github.com/arduino/arduino-builder
+## Setup arduino-builder
+#RUN git clone https://github.com/arduino/arduino-builder
 
 COPY startup.sh /go/
 RUN dos2unix /go/startup.sh && chmod a+x /go/startup.sh
