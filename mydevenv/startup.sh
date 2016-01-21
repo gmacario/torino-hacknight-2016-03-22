@@ -9,4 +9,7 @@ go get github.com/jstemmer/go-junit-report
 go get golang.org/x/codereview/patch
 go get golang.org/x/tools/cmd/vet
 go build
+#
+# Add test steps
+go test -v ./src/arduino.cc/builder/test/...
 exec /bin/bash $*
