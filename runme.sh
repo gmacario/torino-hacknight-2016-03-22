@@ -1,14 +1,17 @@
 #!/bin/bash
 
-[[ "${VM}" = "" ]] && VM=torino-hacknight
+set -e
+
+if [[ "${VM}" = "" ]]; then
+    # If VM is not defined, try setting it to active docker-machine
+    # otherwise just pick a default name
+    VM=$(docker-machine active) || VM=torino-hacknight
+fi
 [[ "${VM_NUM_CPUS}" = "" ]] && VM_NUM_CPUS=1
 [[ "${VM_MEM_SIZEMB}" = "" ]] && VM_MEM_SIZEMB=1024
 [[ "${VM_DISK_SIZEMB}" = "" ]] && VM_DISK_SIZEMB=10000
 
-set -e
-
 # docker-machine ls
-
 if docker-machine ls | grep ${VM} >/dev/null; then
     echo "WARNING: Docker machine ${VM} exists, skipping docker-machine create"
 else
@@ -19,6 +22,7 @@ else
       --virtualbox-disk-size "${VM_DISK_SIZEMB}" \
       ${VM}
 fi
+echo "INFO: Using Docker machine ${VM}"
 if docker-machine status ${VM} | grep -v Running >/dev/null; then
     docker-machine start ${VM}
 fi
