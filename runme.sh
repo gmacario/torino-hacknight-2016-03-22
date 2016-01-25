@@ -12,7 +12,6 @@ fi
 [[ "${VM_DISK_SIZEMB}" = "" ]] && VM_DISK_SIZEMB=10000
 
 # docker-machine ls
-
 if docker-machine ls | grep ${VM} >/dev/null; then
     echo "WARNING: Docker machine ${VM} exists, skipping docker-machine create"
 else
@@ -23,6 +22,7 @@ else
       --virtualbox-disk-size "${VM_DISK_SIZEMB}" \
       ${VM}
 fi
+echo "INFO: Using Docker machine ${VM}"
 if docker-machine status ${VM} | grep -v Running >/dev/null; then
     docker-machine start ${VM}
 fi
