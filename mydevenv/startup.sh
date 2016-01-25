@@ -1,5 +1,8 @@
 #!/bin/bash -xe
 
+# Check-out sources
+[ ! -d arduino-builder ] && git clone https://github.com/arduino/arduino-builder
+
 cd arduino-builder
 # DO NOT source setup_go_env_vars
 export GOPATH=$(pwd)
