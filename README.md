@@ -1,5 +1,5 @@
-torino-hacknight
-================
+torino-hacknight 2016-01-21 (Arduino and golang)
+================================================
 
 Create a reproducible development environment for the 2016-01-21 edition of [Torino Hacknight](http://torino.hacknight.it/).
 
