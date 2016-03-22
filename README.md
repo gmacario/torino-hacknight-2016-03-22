@@ -17,13 +17,8 @@ System Requirements
 
 * A recent laptop with at least 4 GB RAM and a 64-bit OS and a fast Internet connection
 * [Git](https://git-scm.com/)
-* [Docker Machine](https://www.docker.com/docker-machine)
-* [Docker Compose](https://www.docker.com/docker-compose)
-* [Oracle VM VirtualBox](https://www.virtualbox.org/) - alternatively, you may use a Docker Engine installed on a remote machine (or even on the host if it runs Linux)
 
-Notice that installing [Docker Toolbox](https://www.docker.com/docker-toolbox) on your laptop will satisfy all the software requirements.
-
-This project has been developed and tested using Docker Toolbox 1.9.1i running on a Dell laptop with 8 GB RAM and MS Windows 7 64-bit.
+This project has been developed and tested using [Cygwin64](https://www.cygwin.com/) running on a Dell laptop with 8 GB RAM and MS Windows 7 64-bit.
 
 License and Copyright
 ---------------------
@@ -31,6 +26,5 @@ License and Copyright
 License: MIT - See [LICENSE](LICENSE) file for details.
 
 Copyright 2016, [Gianpaolo Macario](https://gmacario.github.io/)
-
 
 <!-- EOF -->
