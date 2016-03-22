@@ -1,5 +1,5 @@
-torino-hacknight
-================
+torino-hacknight 2016-03-22 (AXEMAS)
+====================================
 
 Create a reproducible development environment for the 2016-03-22 edition of [Torino Hacknight](http://torino.hacknight.it/).
 
