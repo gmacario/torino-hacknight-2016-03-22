@@ -1,7 +1,7 @@
 torino-hacknight
 ================
 
-Create a reproducible development environment for the 2016-01-21 edition of [Torino Hacknight](http://torino.hacknight.it/).
+Create a reproducible development environment in preparation to [Torino Hacknight](http://torino.hacknight.it/).
 
 TL;DR
 -----
